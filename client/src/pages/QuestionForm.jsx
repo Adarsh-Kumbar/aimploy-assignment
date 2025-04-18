@@ -35,7 +35,7 @@ const QuestionForm = () => {
     }
 
     axios
-      .post(`http://localhost:5000/api/question/${candidateId}`, formData, {
+      .post(`https://aimploy-assignment-backend.onrender.com/api/question/${candidateId}`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
