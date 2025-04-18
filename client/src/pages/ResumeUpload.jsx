@@ -20,7 +20,7 @@ const ResumeUpload = () => {
     const formData = new FormData();
     formData.append("resume", resume);
     axios
-      .post(`https://aimploy-assignment-backend.onrender.com/api/resume/${candidateId}`, formData, {
+      .post(`http://localhost:5000/api/resume/${candidateId}`, formData, {
         headers:{
             "Content-Type":"multipart/form-data",
         },
