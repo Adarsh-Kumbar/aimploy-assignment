@@ -11,7 +11,7 @@ const CandidateForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://aimploy-assignment-backend.onrender.com/api/candidate", { name, email, phone })
+      .post("http://localhost:5000/api/candidate", { name, email, phone })
       .then((response) => {
         console.log("Candidate Saved",response.data);
         const candidateId = response.data._id; 
